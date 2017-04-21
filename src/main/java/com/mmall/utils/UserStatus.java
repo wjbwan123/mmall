@@ -9,11 +9,11 @@ public enum UserStatus {
     /**
      * 禁用
      */
-    DISABLE(1),
+    DISABLE(0),
     /**
      * 正常
      */
-    NORMAL(2);
+    NORMAL(1);
 
     private int value;
 
