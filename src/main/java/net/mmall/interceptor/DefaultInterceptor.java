@@ -1,19 +1,10 @@
 package net.mmall.interceptor;
 
-import com.alibaba.fastjson.JSONException;
-import com.google.gson.Gson;
-import net.mmall.entity.Region;
-import net.mmall.utils.Constants;
-import net.mmall.utils.CookieUtils;
-import net.mmall.utils.ShiroUtils;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 默认拦截器
