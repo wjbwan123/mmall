@@ -17,7 +17,7 @@
      	http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
     <!-- 继承自AuthorizingRealm的自定义Realm,即指定Shiro验证用户登录的类为自定义的UserRealm.java -->
-    <bean id="userRealm" class="net.rckd.shiro.UserRealm"/>
+    <bean id="userRealm" class="net.mmal.shiro.UserRealm"/>
 
     <!-- 缓存管理器
     <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager" />

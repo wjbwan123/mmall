@@ -15,7 +15,7 @@
 		http://www.springframework.org/schema/mvc 
      	http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
-	<context:component-scan base-package="net.rckd" />
+	<context:component-scan base-package="net.mmal" />
 	<context:annotation-config />
 	<mvc:default-servlet-handler />
 	<mvc:annotation-driven>
@@ -117,7 +117,7 @@
 			<mvc:exclude-mapping path="/*.gif"/>
 			<mvc:exclude-mapping path="/*.jpg"/>
 			<mvc:exclude-mapping path="/*.jpeg"/>
-			<bean class="net.rckd.interceptor.DefaultInterceptor"></bean>
+			<bean class="net.mmal.interceptor.DefaultInterceptor"></bean>
 		</mvc:interceptor>
 
 	</mvc:interceptors>
