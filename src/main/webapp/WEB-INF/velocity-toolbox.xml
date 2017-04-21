@@ -4,6 +4,6 @@
 	<tool>
 	    <key>shiro</key>
 	    <scope>application</scope>
-	    <class>net.mmal.shiro.VelocityShiro</class>
+	    <class>net.mmall.shiro.VelocityShiro</class>
 	</tool>
 </toolbox>

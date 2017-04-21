@@ -56,6 +56,6 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="net.mmal.dao" />
+		<property name="basePackage" value="net.mmall.dao" />
 	</bean>
 </beans>
