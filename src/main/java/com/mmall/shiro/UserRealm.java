@@ -43,9 +43,9 @@ public class UserRealm extends AuthorizingRealm {
             throw new IncorrectCredentialsException("账号或密码不正确");
         }
         //账号冻结
-        if (user.getStatus() == UserStatus.DISABLE.getValue()) {
-            throw new LockedAccountException("账号已被冻结,请联系管理员");
-        }
+        //if (user.getStatus() == UserStatus.DISABLE.getValue()) {
+            //throw new LockedAccountException("账号已被冻结,请联系管理员");
+        //}
         user.setPassword(null);
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, password, getName());
         return info;

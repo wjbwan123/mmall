@@ -3,49 +3,48 @@ package com.mmall.entity;
 import java.util.Date;
 
 /**
- * 注册用户实体类
+ * 注册用户
  *
  * @author hanyi
  * @date 2017年04月08日
  */
 public class User {
     private Integer id;
-    /**
-     * 帐号
-     */
-    private String account;
-    /**
-     * 密码
-     */
+
+    private String username;
+
     private String password;
-    /**
-     * 创建时间
-     */
+
+    private String email;
+
+    private String phone;
+
+    private String question;
+
+    private String answer;
+
+    private Integer role;
+
     private Date createTime;
-    /**
-     * 最近登录时间
-     */
-    private Date lastLoginTime;
-    /**
-     * 荣誉积分
-     */
-    private Integer creditScore;
-    /**
-     * 地区主键
-     */
-    private Integer regionCode;
-    /**
-     * 系统积分
-     */
-    private Integer systemIntegral;
-    /**
-     * 会员积分
-     */
-    private Integer memberIntegral;
-    /**
-     * 状态
-     */
-    private Integer status;
+
+    private Date updateTime;
+
+    public User(Integer id, String username, String password, String email, String phone, String question, String answer, Integer role, Date createTime, Date updateTime) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.question = question;
+        this.answer = answer;
+        this.role = role;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public User() {
+        super();
+    }
 
     public Integer getId() {
         return id;
@@ -55,12 +54,12 @@ public class User {
         this.id = id;
     }
 
-    public String getAccount() {
-        return account;
+    public String getUsername() {
+        return username;
     }
 
-    public void setAccount(String account) {
-        this.account = account;
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
     }
 
     public String getPassword() {
@@ -68,7 +67,47 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email == null ? null : email.trim();
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question == null ? null : question.trim();
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer == null ? null : answer.trim();
+    }
+
+    public Integer getRole() {
+        return role;
+    }
+
+    public void setRole(Integer role) {
+        this.role = role;
     }
 
     public Date getCreateTime() {
@@ -79,51 +118,11 @@ public class User {
         this.createTime = createTime;
     }
 
-    public Date getLastLoginTime() {
-        return lastLoginTime;
+    public Date getUpdateTime() {
+        return updateTime;
     }
 
-    public void setLastLoginTime(Date lastLoginTime) {
-        this.lastLoginTime = lastLoginTime;
-    }
-
-    public Integer getCreditScore() {
-        return creditScore;
-    }
-
-    public void setCreditScore(Integer creditScore) {
-        this.creditScore = creditScore;
-    }
-
-    public Integer getRegionCode() {
-        return regionCode;
-    }
-
-    public void setRegionCode(Integer regionCode) {
-        this.regionCode = regionCode;
-    }
-
-    public Integer getSystemIntegral() {
-        return systemIntegral;
-    }
-
-    public void setSystemIntegral(Integer systemIntegral) {
-        this.systemIntegral = systemIntegral;
-    }
-
-    public Integer getMemberIntegral() {
-        return memberIntegral;
-    }
-
-    public void setMemberIntegral(Integer memberIntegral) {
-        this.memberIntegral = memberIntegral;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }
