@@ -1,4 +1,4 @@
-package net.mmall.shiro;
+package com.mmall.shiro;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;

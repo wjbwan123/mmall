@@ -1,4 +1,4 @@
-package net.mmall.utils;
+package com.mmall.utils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

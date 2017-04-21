@@ -1,7 +1,7 @@
-package net.mmall.controller;
+package com.mmall.controller;
 
-import net.mmall.entity.User;
-import net.mmall.utils.ShiroUtils;
+import com.mmall.entity.User;
+import com.mmall.utils.ShiroUtils;
 import org.apache.shiro.session.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

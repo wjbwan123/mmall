@@ -1,4 +1,4 @@
-package net.mmall.utils;
+package com.mmall.utils;
 
 /**
  * 常量类

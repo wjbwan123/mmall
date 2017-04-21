@@ -1,8 +1,8 @@
-package net.mmall.controller;
+package com.mmall.controller;
 
-import net.mmall.utils.Md5Utils;
-import net.mmall.utils.R;
-import net.mmall.utils.ShiroUtils;
+import com.mmall.utils.Md5Utils;
+import com.mmall.utils.R;
+import com.mmall.utils.ShiroUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;

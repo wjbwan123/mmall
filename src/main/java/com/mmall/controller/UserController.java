@@ -1,9 +1,9 @@
-package net.mmall.controller;
+package com.mmall.controller;
 
-import net.mmall.entity.User;
-import net.mmall.service.UserService;
-import net.mmall.utils.Constants;
-import net.mmall.utils.R;
+import com.mmall.entity.User;
+import com.mmall.service.UserService;
+import com.mmall.utils.Constants;
+import com.mmall.utils.R;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

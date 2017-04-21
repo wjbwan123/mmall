@@ -1,4 +1,4 @@
-package net.mmall.utils;
+package com.mmall.utils;
 
 import java.util.HashMap;
 import java.util.Map;

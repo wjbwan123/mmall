@@ -1,6 +1,6 @@
-package net.mmall.dao;
+package com.mmall.dao;
 
-import net.mmall.entity.User;
+import com.mmall.entity.User;
 import org.apache.ibatis.annotations.Param;
 
 /**

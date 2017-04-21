@@ -1,6 +1,6 @@
-package net.mmall.service;
+package com.mmall.service;
 
-import net.mmall.entity.User;
+import com.mmall.entity.User;
 
 /**
  * 注册用户

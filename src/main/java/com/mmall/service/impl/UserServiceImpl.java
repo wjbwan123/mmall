@@ -1,9 +1,9 @@
-package net.mmall.service.impl;
+package com.mmall.service.impl;
 
-import net.mmall.dao.UserDao;
-import net.mmall.entity.User;
-import net.mmall.service.UserService;
-import net.mmall.utils.Constants;
+import com.mmall.dao.UserDao;
+import com.mmall.entity.User;
+import com.mmall.service.UserService;
+import com.mmall.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

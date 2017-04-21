@@ -1,8 +1,8 @@
-package net.mmall.shiro;
+package com.mmall.shiro;
 
-import net.mmall.entity.User;
-import net.mmall.service.UserService;
-import net.mmall.utils.UserStatus;
+import com.mmall.entity.User;
+import com.mmall.service.UserService;
+import com.mmall.utils.UserStatus;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;

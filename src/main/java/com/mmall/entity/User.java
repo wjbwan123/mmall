@@ -1,4 +1,4 @@
-package net.mmall.entity;
+package com.mmall.entity;
 
 import java.util.Date;
 

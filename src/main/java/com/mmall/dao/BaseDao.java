@@ -1,4 +1,4 @@
-package net.mmall.dao;
+package com.mmall.dao;
 
 import org.apache.ibatis.annotations.Param;
 

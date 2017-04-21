@@ -1,4 +1,4 @@
-package net.mmall.interceptor;
+package com.mmall.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

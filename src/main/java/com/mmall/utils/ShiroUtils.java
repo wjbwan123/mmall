@@ -1,6 +1,6 @@
-package net.mmall.utils;
+package com.mmall.utils;
 
-import net.mmall.entity.User;
+import com.mmall.entity.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;

@@ -1,4 +1,4 @@
-package net.mmall.utils;
+package com.mmall.utils;
 
 import org.apache.shiro.crypto.hash.Md5Hash;
 
