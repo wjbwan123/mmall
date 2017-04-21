@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2017年04月08日
  */
 @RestController
-@RequestMapping("u")
+@RequestMapping("/u/")
 public class LoginController extends AbstractController {
     /**
      * 登陆
      */
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "login", method = RequestMethod.POST)
     public R login(String account, String password) {
         if (StringUtils.isBlank(account) || StringUtils.isBlank(password)) {
             return R.error("帐号密码不能为空");
@@ -47,7 +47,7 @@ public class LoginController extends AbstractController {
     /**
      * 退出登陆
      */
-    @RequestMapping(value = "/logout", method = RequestMethod.POST)
+    @RequestMapping(value = "logout", method = RequestMethod.POST)
     public R logout() {
         ShiroUtils.logout();
         return R.ok();
@@ -56,8 +56,8 @@ public class LoginController extends AbstractController {
     /**
      * 判断是否登陆
      */
-    @RequestMapping(value = "isLogin", method = RequestMethod.POST)
-    public R isLogin() {
+    @RequestMapping(value = "checkLogin", method = RequestMethod.POST)
+    public R checkLogin() {
         if (ShiroUtils.isLogin()) {
             return R.ok();
         } else {
