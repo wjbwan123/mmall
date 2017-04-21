@@ -36,46 +36,4 @@ public class DefaultInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object o, Exception e) throws Exception {
         //todo
     }
-
-    //是否是二级域名
-    private boolean isSecondLevelDomain(String serverName) {
-        boolean result = StringUtils.isNotBlank(serverName)
-                && !serverName.equals("www") && !serverName.equals("localhost")
-                && !serverName.equals("127.0.0.1");
-        return result;
-    }
-
-    private boolean TODO(HttpServletRequest request, HttpServletResponse response, Object o) {
-        Region region = (Region) ShiroUtils.getSessionAttribute(Constants.AREA_SESSION_KEY);
-        // 获取域名
-        String serverName = request.getServerName();
-        if (isSecondLevelDomain(serverName)) {
-            //先从redis里根据index取area 取不到从数据库里取
-            Map<String, Object> map = new HashMap<>();
-            map.put("index", serverName);
-            //region = areaService.getByObject(map);
-        }
-        //判断session里area是不是为空
-        if (region == null) {
-            //如果area为null，cookie里取area
-            String regionJson = CookieUtils.getCookieValue(request, Constants.AREA_COOKIE_KEY);
-            if (regionJson != null) {
-                Gson gson = new Gson();
-                try {
-                    region = gson.fromJson(regionJson, Region.class);
-                } catch (JSONException e) {
-                    region = null;
-                }
-            }
-        }
-        if (region == null) {
-            //如果area为null，根据定位地址
-            //todo
-        }
-        if (region == null) {
-            //如果area为null，取默认地区
-            //todo
-        }
-        return true;
-    }
 }
