@@ -10,24 +10,46 @@ import java.util.Date;
  */
 public class User {
     private Integer id;
-
+    /**
+     * 用户名
+     */
     private String username;
-
+    /**
+     * 密码
+     */
     private String password;
-
+    /**
+     * 邮箱
+     */
     private String email;
-
+    /**
+     * 手机号码
+     */
     private String phone;
-
+    /**
+     * 问题提问
+     */
     private String question;
-
+    /**
+     * 问题答案
+     */
     private String answer;
-
+    /**
+     * 用户角色（0-后台管理员,1-普通用户）
+     */
     private Integer role;
-
+    /**
+     * 创建时间
+     */
     private Date createTime;
-
+    /**
+     * 修改时间
+     */
     private Date updateTime;
+    /**
+     * 用户状态（0-禁用,1-正常）
+     */
+    private Integer status;
 
     public User(Integer id, String username, String password, String email, String phone, String question, String answer, Integer role, Date createTime, Date updateTime) {
         this.id = id;
@@ -124,5 +146,13 @@ public class User {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }
