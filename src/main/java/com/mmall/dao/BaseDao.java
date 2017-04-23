@@ -10,19 +10,13 @@ import java.util.Map;
  * @date 2017年04月08日
  */
 public interface BaseDao<T> {
-    void save(T t);
+    int save(T t);
 
-    void save(Map<String, Object> map);
-
-    void saveBatch(List<T> list);
+    int saveBatch(List<T> list);
 
     int update(T t);
 
-    int update(Map<String, Object> map);
-
     int delete(Object id);
-
-    int delete(Map<String, Object> map);
 
     int deleteBatch(Object[] id);
 

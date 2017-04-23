@@ -14,22 +14,19 @@ import java.util.Date;
  * @author hanyi
  * @date 2017年04月08日
  */
-@Service
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService{
     @Autowired
     private UserDao userDao;
 
+
     @Override
-    public User getByAccount(String account) {
-        return userDao.queryByAccount(account);
+    public User getByUsername(String username) {
+        return userDao.queryByUsername(username);
     }
 
     @Override
     public void save(User user) {
-        Date now = new Date();
-        user.setCreateTime(now);
-        user.setLastLoginTime(now);
-        user.setSystemIntegral(Constants.REGISTER_INTEGRAL);
         userDao.save(user);
     }
 

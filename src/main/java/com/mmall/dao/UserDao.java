@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Param;
  * @date 2017年04月08日
  */
 public interface UserDao extends BaseDao<User>{
-     User queryByAccount(@Param("account") String account);
+     User queryByUsername(String username);
 }

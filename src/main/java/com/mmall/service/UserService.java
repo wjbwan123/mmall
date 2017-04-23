@@ -9,7 +9,7 @@ import com.mmall.entity.User;
  * @date 2017年04月08日
  */
 public interface UserService {
-    User getByAccount(String account);
+    User getByUsername(String username);
 
     void save(User user);
 
